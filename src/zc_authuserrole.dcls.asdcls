@@ -1,0 +1,6 @@
+@EndUserText.label: 'ZC_AUTHUSERROLE'
+@MappingRole: true
+define role ZC_AUTHUSERROLE {
+  grant select on ZC_AUTHUSERROLE
+  where INHERITING CONDITIONS FROM ENTITY ZI_AUTHUSERROLE DEFAULT TRUE;
+}

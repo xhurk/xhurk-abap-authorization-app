@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_AUTHUSERROLE'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_AUTHUSERROLE'
+  }
+}
+define service ZUI_AUTHUSERROLE_O4 provider contracts odata_v4_ui {
+  expose ZC_AUTHUSERROLE;
+}

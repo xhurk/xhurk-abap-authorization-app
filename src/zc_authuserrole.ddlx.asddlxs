@@ -1,0 +1,151 @@
+/*@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'UserId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'UserId'
+annotate view ZC_AUTHUSERROLE with
+{
+  @EndUserText.label: 'UserId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UserId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UserId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  UserId;
+  
+  @EndUserText.label: 'RoleId'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'RoleId'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'RoleId'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  RoleId;
+  
+  @EndUserText.label: 'FullName'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'FullName'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'FullName'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  FullName;
+  
+  @EndUserText.label: 'Department'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Department'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Department'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  Department;
+  
+  @EndUserText.label: 'RoleDescription'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'RoleDescription'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'RoleDescription'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  RoleDescription;
+  
+  @EndUserText.label: 'ValidFrom'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'ValidFrom'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'ValidFrom'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  ValidFrom;
+  
+  @EndUserText.label: 'ValidTo'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'ValidTo'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'ValidTo'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  ValidTo;
+}*/
+@Metadata.layer: #CORE
+@UI.headerInfo: { typeName: 'User role',
+                  typeNamePlural: 'User roles',
+                  title: { value: 'UserId' },
+                  description: { value: 'FullName' } }
+annotate entity ZC_AUTHUSERROLE with
+{
+  @UI.facet: [{ id: 'Detail', type: #IDENTIFICATION_REFERENCE,
+                label: 'Detail', position: 10 }]
+
+  @UI.lineItem:       [{ position: 10 }]
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  UserId;
+
+  @UI.lineItem:       [{ position: 20 }]
+  @UI.identification: [{ position: 20 }]
+  FullName;
+
+  @UI.lineItem:       [{ position: 30 }]
+  @UI.selectionField: [{ position: 20 }]
+  Department;
+
+  @UI.lineItem:       [{ position: 40 }]
+  @UI.identification: [{ position: 30 }]
+  @UI.selectionField: [{ position: 30 }]
+  RoleId;
+
+  @UI.lineItem:       [{ position: 50 }]
+  RoleDescription;
+
+  @UI.lineItem:       [{ position: 60 }]
+  @UI.identification: [{ position: 40 }]
+  ValidFrom;
+
+  @UI.lineItem:       [{ position: 70 }]
+  @UI.identification: [{ position: 50 }]
+  ValidTo;
+}
